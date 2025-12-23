@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <meta name="image" property="og:image" content="./Content.png">
+    <meta name="author" content="KATU SHLOK BALASAHEB">
+    <link rel="icon" href="./Logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VLSQTZ4FEJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VLSQTZ4FEJ');
+    </script>
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="Winner-Container hide">
+        <p class="msg"></p>
+        <p class="scoremsg1"></p>
+        <p class="scoremsg2"></p>
+        <div class="hiddenbuttons">
+            <button class="newgame">Play Again!</button>
+            <button class="hiddenreset">Reset Game</button>
+        </div>
+    </div>
+    <div class="container hidden">
+        <div class="Player1" id="playersdetails">
+            <p>Enter the name of Player1:</p>
+            <input type="text" class="Player1name" id="user1-name" placeholder="Enter Your Name"></input>
+            <p id="pname1"></p>
+            <p>Enter Your Symbol:</p>
+            <input type="text" id="input1" id="symbol1-name" placeholder="Enter Your Symbol"></input>
+            <p id="psymbol1"></p>
+            <button class="Submit" id="submit1" onclick="addTask()">Submit</button>
+        </div>
+            <div class="game">
+                <button class="box" onclick="addTask()"></button>
+                <button class="box" onclick="addTask()"></button>
+                <button class="box" onclick="addTask()"></button>
+                <button class="box" onclick="addTask()"></button>
+                <button class="box" onclick="addTask()"></button>
+                <button class="box" onclick="addTask()"></button>
+                <button class="box" onclick="addTask()"></button>
+                <button class="box" onclick="addTask()"></button>
+                <button class="box" onclick="addTask()"></button>
+            </div>
+        <div class="Player2" id="playersdetails">
+            <p>Enter the name of Player2:</p>
+            <input type="text" class="Player2name" id="user2-name" placeholder="Enter Your Name"></input>
+            <p id="pname2"></p>
+            <p>Enter Your Symbol:</p>
+            <input type="text" id="input2" id="symbol2-name" placeholder="Enter Your Symbol"></input>
+            <p id="psymbol2"></p>
+            <button class="Submit" id="submit2" onclick="addTask()">Submit</button>
+        </div>
+    </div>
+    <div id="reset">
+        <button class="reset">Reset Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
